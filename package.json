@@ -1,0 +1,19 @@
+{
+  "name": "fp-monad-practice",
+  "version": "1.0.0",
+  "description": "Practice for monads in functional programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woogieReal/fp-monad-practice.git"
+  },
+  "author": "woogieReal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woogieReal/fp-monad-practice/issues"
+  },
+  "homepage": "https://github.com/woogieReal/fp-monad-practice#readme"
+}
