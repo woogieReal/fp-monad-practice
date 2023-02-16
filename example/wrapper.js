@@ -1,25 +1,5 @@
-var _ = require('lodash');
-
-class Wrapper {
-  constructor (value) {
-    this._value = value;
-  }
-
-  // map :: (A -> B) A -> B
-  map (f) {
-    return f(this._value);
-  }
-
-  // fmap:: (A -> B) Wrapper[A] -> Wrapper[B]
-  fmap (f) {
-    return new Wrapper(f(this._value));
-  }
-
-  toString() {
-    return `Wrapper (${this._value})`;
-  }
-}
-
+const _ = require('lodash');
+const Wrapper = require('../class/Wrapper');
 
 /**
  * Wrapper 형은 map을 통해 값에 접근하거나 값을 변경할 수 있다.
