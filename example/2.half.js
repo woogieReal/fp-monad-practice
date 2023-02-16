@@ -1,5 +1,5 @@
-const Wrapper = require('../class/Wrapper');
-const Empty = require('../class/Empty');
+const Wrapper = require('../class/basic/Wrapper');
+const Empty = require('../class/basic/Empty');
 
 const wrap = (val) => new Wrapper(val);
 const empty = () => new Empty();

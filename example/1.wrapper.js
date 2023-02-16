@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const Wrapper = require('../class/Wrapper');
+const Wrapper = require('../class/basic/Wrapper');
 
 /**
  * Wrapper 형은 map을 통해 값에 접근하거나 값을 변경할 수 있다.
