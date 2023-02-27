@@ -30,18 +30,18 @@ const findObject = _.curry((list, id) => Wrapper.of(find(list, id)));
 // getNation :: Student -> Wrapper
 const getNation = person => Wrapper.of(person.map(_.property('nation')));
 
-const studentNations = _.flow([
+const studentNationById = _.flow([
   findObject(studentList),
   getNation,
 ])
 
 // 중첩된 Wrapper 집합을 return
-studentNations(2);
+studentNationById(2);
 // -> Wrapper { _value: Wrapper { _value: 'Tiwan' } }
 
 // join 함수를 적용하여 납작한 단층 구조로 눌러 폄
-studentNations(2).join();
+studentNationById(2).join();
 // -> Wrapper { _value: 'Tiwan' }
 
-studentNations(2).join().get();
+studentNationById(2).join().get();
 // -> Tiwan
