@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/woogieReal/fp-monad-practice#readme",
   "dependencies": {
+    "fp-ts": "^2.13.1",
     "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
   },
