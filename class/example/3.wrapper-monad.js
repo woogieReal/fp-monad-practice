@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const Wrapper = require('../class/monad/Wrapper');
+const Wrapper = require('../monad/Wrapper');
 
 /**
  * 여기서 map은 중립 함수자 (neutral functor)

@@ -1,5 +1,5 @@
 const _ = require("lodash");
-const { Maybe } = require("../class/monad/Maybe");
+const { Maybe } = require("../monad/Maybe");
 const DB = require("./DB");
 
 const find = (list, id) => _.find(list, { id: id });

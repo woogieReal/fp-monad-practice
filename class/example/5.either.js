@@ -1,5 +1,5 @@
 const _ = require("lodash");
-const { Either } = require("../class/monad/Either");
+const { Either } = require("../monad/Either");
 const DB = require("./DB");
 
 const find = (list, id) => _.find(list, { id: id });
