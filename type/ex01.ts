@@ -1,11 +1,11 @@
 import { Option, none, some, fromNullable } from 'fp-ts/Option'
 import { Member, DB_DATAS } from './DB';
 
-function findIndex<A>(
-  as: Array<A>,
+const findIndex = <A>(
+  arr: Array<A>,
   predicate: (a: A) => boolean
-): Option<number> {
-  const index = as.findIndex(predicate)
+): Option<number> => {
+  const index = arr.findIndex(predicate)
   return index === -1 ? none : some(index)
 }
 
@@ -13,8 +13,11 @@ const index = findIndex<Member>(DB_DATAS.member, (member: Member) => member.id =
 // { _tag: 'Some', value: 3 
 // { _tag: 'None' }
 
-function find<A>(as: Array<A>, predicate: (a: A) => boolean): Option<A> {
-  return fromNullable(as.find(predicate))
+const find = <A>(
+  arr: Array<A>,
+  predicate: (a: A) => boolean
+): Option<A> => {
+  return fromNullable(arr.find(predicate))
 }
 
 const member = find<Member>(DB_DATAS.member, (member: Member) => member.id === 2);
